@@ -23,11 +23,16 @@ public class MyServlet extends HttpServlet {
 //        );
 //        req.setAttribute("name", "김자바");
         req.setAttribute("name", "박서블릿");
-        Dotenv dotenv = Dotenv.load(); // 이것만해도 불러와진 것
+        // - 환경변수를 직접 주입함 (render에서)
+//        Dotenv dotenv = Dotenv.load(); // [7]
+        Dotenv dotenv = Dotenv.configure()
+                .ignoreIfMissing().load(); // 배포환경에서, '없으면 무시'
+        // .env 파일이 없으면 에러를 던지는 설정
+        String apiKey = dotenv.get("GOOGLE_API_KEY");
+        // [8] -> resources/.env
         // dotenv -> 주의해야할 점. 루트경로가 아니라 'resources'안에 .env가 있어야함
         Client client = Client.builder()
-                .apiKey(dotenv.get("GOOGLE_API_KEY"))
-                .build(); // GOOGLE_API_KEY => 환경변수
+                .apiKey(apiKey).build(); // [9]
         req.setAttribute("saying", client.models.generateContent("gemini-2.0-flash", "오늘 날씨에 어울리는 명언, 결과만 짧게.", null)
                 .candidates().get().get(0).content().get().text());
         // resp -> 아웃풋 (화면 표현되는 것, 주소)

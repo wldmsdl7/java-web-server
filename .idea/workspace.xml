@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fce1042-9c1b-4ab5-9f1c-fd3b4c797ab2" name="Changes" comment="refactor : delete index.jsp">
+    <list default="true" id="5fce1042-9c1b-4ab5-9f1c-fd3b4c797ab2" name="Changes" comment="refactor : dotenv load() 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AIServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AIServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ai.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ai.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754636900903</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor : dotenv load() 수정">
+      <option name="closed" value="true" />
+      <created>1754637961350</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1754637961350</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +192,8 @@
     <MESSAGE value="refactor : html 파일 꾸미기" />
     <MESSAGE value="refactor : add AI chat" />
     <MESSAGE value="refactor : delete index.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor : delete index.jsp" />
+    <MESSAGE value="refactor : dotenv load() 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor : dotenv load() 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
