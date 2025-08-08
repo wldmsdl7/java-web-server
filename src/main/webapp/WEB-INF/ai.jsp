@@ -1,7 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
-    <title>AI 너무 좋아!</title>
+    <title>Gemini랑 대화하기</title>
+        <!-- OG Tag -->
+        <meta property="og:title" content="Gemini에게 질문해보자!">
+        <meta property="og:description" content="Gemini 1.5 Flash로 구현한 챗봇">
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
@@ -64,7 +67,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🤖 AI 너무 좋아!</h1>
+        <h1>🤖Gemini한테 질문해볼래 ?</h1>
         <p><span class="label">질문</span> : <%= request.getAttribute("question") != null ? request.getAttribute("question") : "아직 질문이 없습니다." %></p>
         <p><span class="label">답변</span> : <%= request.getAttribute("data") != null ? request.getAttribute("data") : "아직 답변이 없습니다." %></p>
 
